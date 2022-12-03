@@ -1,0 +1,7 @@
+.cityName {
+    letter-spacing: 0.1rem;
+}
+
+.weather {
+    box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
+}

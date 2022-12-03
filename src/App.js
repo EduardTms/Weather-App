@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Search from './components/search';
 import 'tachyons';
-
+import CurrentWeather from './components/current-weather/current-weather';
  const App = () =>  {
 
   const handleOnSearchChange = (searchData) => {
@@ -11,8 +11,9 @@ import 'tachyons';
 
 
     return (
-      <div className="tc">
+      <div className="">
         <Search onSearchChange={handleOnSearchChange}/>
+        <CurrentWeather />
       </div>
     );
   
