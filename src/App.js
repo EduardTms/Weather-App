@@ -1,29 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import Search from './components/search';
 import 'tachyons';
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      city: 'location',
-      searchfield: ''
-    }
+ const App = () =>  {
+
+  const handleOnSearchChange = (searchData) => {
+    console.log(searchData);
   }
 
-  onSearchChange(event) {
-    // this.setState({ searchField: event.target.value });
-    console.log(event.target.value)
-  }
 
-  render() {
     return (
-      <div className="App">
-        <Search searchChange={this.onSearchChange}/>
+      <div className="tc">
+        <Search onSearchChange={handleOnSearchChange}/>
       </div>
     );
-  }
   
 }
 
