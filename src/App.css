@@ -3,11 +3,3 @@ html {
     height: 100%;
     background-image: url('/home/eduard/Documents/repos/weather-app/public/bg2.jpg');
 }
-
-.cityName {
-    color: whitesmoke;
-}
-
-.cityStatus {
-    color: whitesmoke;
-}
