@@ -2,9 +2,10 @@
     letter-spacing: 0.1rem;
 }
 
-/* .weather {
-    box-shadow: 10px -2px 20px 2px rgba(49, 49, 28, 0.555);
-} */
+.weather {
+    /* box-shadow: 10px -2px 20px 2px rgba(49, 49, 28, 0.555); */
+    display: inline-block;
+}
 
 .cityName, .cityStatus, .cityHumidity, .cityTemp, .cityWind, .cityFeels, .cityPressure {
     color: whitesmoke;

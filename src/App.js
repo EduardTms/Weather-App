@@ -4,6 +4,11 @@ import Search from './components/search';
 import 'tachyons';
 import CurrentWeather from './components/current-weather/current-weather';
 import { WEATHER_API_KEY, WEATHER_API_URL } from './api';
+import ForecastSlider from './components/forecast-weather/slider';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import ErrorBoundry from './components/ErrorBoundry';
+
  const App = () =>  {
   const [currentWeather, setCurrentWeather] = useState(null);
   const [forecastWeather, setForecastWeather] = useState(null);
@@ -26,8 +31,11 @@ import { WEATHER_API_KEY, WEATHER_API_URL } from './api';
 
     return (
       <div className="">
+      <ErrorBoundry>
         <Search onSearchChange={handleOnSearchChange}/>
         {currentWeather && <CurrentWeather data={currentWeather}/>}
+        {forecastWeather && <ForecastSlider data={forecastWeather}/>}
+      </ErrorBoundry>
       </div>
     );
   
