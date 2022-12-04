@@ -4,3 +4,10 @@ html {
     background-image: url('/home/eduard/Documents/repos/weather-app/public/bg.jpg');
     background-repeat: repeat;
 }
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}

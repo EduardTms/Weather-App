@@ -3,7 +3,6 @@
 }
 
 .weather {
-    /* box-shadow: 10px -2px 20px 2px rgba(49, 49, 28, 0.555); */
     display: inline-block;
 }
 
@@ -18,3 +17,13 @@
 .cityIcon {
     width: 50px;
 }
+
+
+@media only screen and (max-width: 1000px) {
+    .weather {
+        /* box-shadow: 10px -2px 20px 2px rgba(49, 49, 28, 0.555); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  }

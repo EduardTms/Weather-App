@@ -28,7 +28,7 @@ const Search = ({ onSearchChange }) => {
 
     return (
         <AsyncPaginate 
-            className="pa3 ba bw1 br3 bg-black" 
+            className="searchBar pa3 ba bw1 br3 bg-black" 
             placeholder="Enter Location"
             debounceTimeout={1000}
             value={search}

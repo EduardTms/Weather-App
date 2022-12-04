@@ -9,11 +9,20 @@ const ForecastSlider = ({ data }) => {
         className: "center",
         centerMode: true,
         infinite: true,
-        centerPadding: "30px",
+        centerPadding: "1px",
         slidesToShow: 3,
         speed: 500,
         autoplay: true,
-        autoplaySpeed: 5000
+        autoplaySpeed: 5000,
+        pauseOnHover: true,
+        responsive: [
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
       }
 
       const WEEK_DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']; 
@@ -25,7 +34,7 @@ const ForecastSlider = ({ data }) => {
       }
 
       return (
-        <div className="slider bt bb mt5">
+        <div className="slider bt bb mt5 pa4">
           <h2 className="f2 tc">7-Day Forecast</h2>
           <Slider {...settings}>
             <div className="forecast-days-container pa1 ma1">
@@ -39,7 +48,7 @@ const ForecastSlider = ({ data }) => {
               </div>
                 <p className="pa0 ma0">Wind: <span>{data.list[0].wind.speed}m/s</span></p>
                 <p className="pa0 ma0">Humidity: <span>{data.list[0].main.humidity}%</span></p>
-                <p className="pa0 ma0">Precipitation: <span>{data.list[0].pop.toFixed(2)}%</span></p>
+                <p className="pa0 ma0">Rain: <span>{data.list[0].pop.toFixed(2)}%</span></p>
             </div>
             <div className="forecast-days-container pa1 ma1">
               <h3 className="f3 ma0 pa0">{getDays()[1]}</h3>
@@ -52,7 +61,7 @@ const ForecastSlider = ({ data }) => {
               </div>
                 <p className="pa0 ma0">Wind: <span>{data.list[1].wind.speed}m/s</span></p>
                 <p className="pa0 ma0">Humidity: <span>{data.list[1].main.humidity}%</span></p>
-                <p className="pa0 ma0">Precipitation: <span>{data.list[1].pop.toFixed(2)}%</span></p>
+                <p className="pa0 ma0">Rain: <span>{data.list[1].pop.toFixed(2)}%</span></p>
             </div>
             <div className="forecast-days-container pa1 ma1">
               <h3 className="f3 ma0 pa0">{getDays()[2]}</h3>
@@ -65,7 +74,7 @@ const ForecastSlider = ({ data }) => {
               </div>
                 <p className="pa0 ma0">Wind: <span>{data.list[2].wind.speed}m/s</span></p>
                 <p className="pa0 ma0">Humidity: <span>{data.list[2].main.humidity}%</span></p>
-                <p className="pa0 ma0">Precipitation: <span>{data.list[2].pop.toFixed(2)}%</span></p>
+                <p className="pa0 ma0">Rain: <span>{data.list[2].pop.toFixed(2)}%</span></p>
             </div>
             <div className="forecast-days-container pa1 ma1">
               <h3 className="f3 ma0 pa0">{getDays()[3]}</h3>
@@ -78,7 +87,7 @@ const ForecastSlider = ({ data }) => {
               </div>
                 <p className="pa0 ma0">Wind: <span>{data.list[3].wind.speed}m/s</span></p>
                 <p className="pa0 ma0">Humidity: <span>{data.list[3].main.humidity}%</span></p>
-                <p className="pa0 ma0">Precipitation: <span>{data.list[3].pop.toFixed(2)}%</span></p>
+                <p className="pa0 ma0">Rain: <span>{data.list[3].pop.toFixed(2)}%</span></p>
             </div>
             <div className="forecast-days-container pa1 ma1">
               <h3 className="f3 ma0 pa0">{getDays()[4]}</h3>
@@ -91,7 +100,7 @@ const ForecastSlider = ({ data }) => {
               </div>
                 <p className="pa0 ma0">Wind: <span>{data.list[4].wind.speed}m/s</span></p>
                 <p className="pa0 ma0">Humidity: <span>{data.list[4].main.humidity}%</span></p>
-                <p className="pa0 ma0">Precipitation: <span>{data.list[4].pop.toFixed(2)}%</span></p>
+                <p className="pa0 ma0">Rain: <span>{data.list[4].pop.toFixed(2)}%</span></p>
             </div>
             <div className="forecast-days-container pa1 ma1">
               <h3 className="f3 ma0 pa0">{getDays()[5]}</h3>
@@ -104,7 +113,7 @@ const ForecastSlider = ({ data }) => {
               </div>
                 <p className="pa0 ma0">Wind: <span>{data.list[5].wind.speed}m/s</span></p>
                 <p className="pa0 ma0">Humidity: <span>{data.list[5].main.humidity}%</span></p>
-                <p className="pa0 ma0">Precipitation: <span>{data.list[5].pop.toFixed(2)}%</span></p>
+                <p className="pa0 ma0">Rain: <span>{data.list[5].pop.toFixed(2)}%</span></p>
             </div>
             <div className="forecast-days-container pa1 ma1">
               <h3 className="f3 ma0 pa0">{getDays()[6]}</h3>
@@ -117,7 +126,7 @@ const ForecastSlider = ({ data }) => {
               </div>
                 <p className="pa0 ma0">Wind: <span>{data.list[6].wind.speed}m/s</span></p>
                 <p className="pa0 ma0">Humidity: <span>{data.list[6].main.humidity}%</span></p>
-                <p className="pa0 ma0">Precipitation: <span>{data.list[6].pop.toFixed(2)}%</span></p>
+                <p className="pa0 ma0">Rain: <span>{data.list[6].pop.toFixed(2)}%</span></p>
             </div>
           </Slider>
         </div>

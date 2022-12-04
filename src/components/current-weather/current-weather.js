@@ -2,7 +2,7 @@ import "./current-weather.css";
 const CurrentWeather = ({ data }) => {
     return (
         <div className="weather">
-            <div className="weather pa3 br4 br--bottom fl w-auto w-40 ph3 ma3 mt4 --yellow">
+            <div className=" pa3 br4 br--bottom fl w-auto w-40 ph3 ma3 mt4 --yellow">
                 <img className="cityIcon fr-m" src={`icons/${data.weather[0].icon}.png`} alt="weatherIcon" />
                 <p className="cityStatus pa0 mb0 b--white">{data.weather[0].description}</p>
                 <p className="cityName pa0 mt0 fw7 f3 ttu">{data.city}</p>
