@@ -1,5 +1,6 @@
 html {
     width: 100%;
     height: 100%;
-    background-image: url('/home/eduard/Documents/repos/weather-app/public/bg2.jpg');
+    background-image: url('/home/eduard/Documents/repos/weather-app/public/bg.jpg');
+    background-repeat: repeat;
 }
