@@ -34,7 +34,7 @@ const ForecastSlider = ({ data }) => {
       }
 
       return (
-        <div className="slider bt bb mt5 pa4">
+        <div className="slider mt5 pa4">
           <h2 className="f2 tc">7-Day Forecast</h2>
           <Slider {...settings}>
             <div className="forecast-days-container pa1 ma1">

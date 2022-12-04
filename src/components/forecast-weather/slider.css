@@ -3,6 +3,7 @@
     width: 98%;
     background-image: url('/home/eduard/Documents/repos/weather-app/public/forecastBG2.jpg');
     background-repeat: no-repeat;
+    /* box-shadow: 10px -2px 20px 2px rgba(49, 49, 28, 0.555); */
 }
 
 img {
