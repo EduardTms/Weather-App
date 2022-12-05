@@ -40,7 +40,7 @@ const ForecastSlider = ({ data }) => {
             <div className="forecast-days-container pa1 ma1">
               <h3 className="f3 ma0 pa0">Tomorrow</h3>
               <div className="forecast-description pa0 ma0">
-                <p className="f4">{data.list[0].weather[0].description} </p>
+                <p className="f5">{data.list[0].weather[0].description} </p>
                 <img src={`icons/${data.list[0].weather[0].icon}.png`} alt="weather-icon" />
               </div>
               <div className="forecast-temp ">
@@ -53,7 +53,7 @@ const ForecastSlider = ({ data }) => {
             <div className="forecast-days-container pa1 ma1">
               <h3 className="f3 ma0 pa0">{getDays()[1]}</h3>
               <div className="forecast-description pa0 ma0">
-                <p className="f4">{data.list[1].weather[0].description} </p>
+                <p className="f5">{data.list[1].weather[0].description} </p>
                 <img src={`icons/${data.list[1].weather[0].icon}.png`} alt="weather-icon" />
               </div>
               <div className="forecast-temp ">
@@ -66,7 +66,7 @@ const ForecastSlider = ({ data }) => {
             <div className="forecast-days-container pa1 ma1">
               <h3 className="f3 ma0 pa0">{getDays()[2]}</h3>
               <div className="forecast-description pa0 ma0">
-                <p className="f4">{data.list[2].weather[0].description} </p>
+                <p className="f5">{data.list[2].weather[0].description} </p>
                 <img src={`icons/${data.list[2].weather[0].icon}.png`} alt="weather-icon" />
               </div>
               <div className="forecast-temp ">
@@ -79,7 +79,7 @@ const ForecastSlider = ({ data }) => {
             <div className="forecast-days-container pa1 ma1">
               <h3 className="f3 ma0 pa0">{getDays()[3]}</h3>
               <div className="forecast-description pa0 ma0">
-                <p className="f4">{data.list[3].weather[0].description} </p>
+                <p className="f5">{data.list[3].weather[0].description} </p>
                 <img src={`icons/${data.list[3].weather[0].icon}.png`} alt="weather-icon" />
               </div>
               <div className="forecast-temp ">
@@ -92,7 +92,7 @@ const ForecastSlider = ({ data }) => {
             <div className="forecast-days-container pa1 ma1">
               <h3 className="f3 ma0 pa0">{getDays()[4]}</h3>
               <div className="forecast-description pa0 ma0">
-                <p className="f4">{data.list[4].weather[0].description} </p>
+                <p className="f5">{data.list[4].weather[0].description} </p>
                 <img src={`icons/${data.list[4].weather[0].icon}.png`} alt="weather-icon" />
               </div>
               <div className="forecast-temp ">
@@ -105,7 +105,7 @@ const ForecastSlider = ({ data }) => {
             <div className="forecast-days-container pa1 ma1">
               <h3 className="f3 ma0 pa0">{getDays()[5]}</h3>
               <div className="forecast-description pa0 ma0">
-                <p className="f4">{data.list[5].weather[0].description} </p>
+                <p className="f5">{data.list[5].weather[0].description} </p>
                 <img src={`icons/${data.list[5].weather[0].icon}.png`} alt="weather-icon" />
               </div>
               <div className="forecast-temp ">
@@ -118,7 +118,7 @@ const ForecastSlider = ({ data }) => {
             <div className="forecast-days-container pa1 ma1">
               <h3 className="f3 ma0 pa0">{getDays()[6]}</h3>
               <div className="forecast-description pa0 ma0">
-                <p className="f4">{data.list[6].weather[0].description} </p>
+                <p className="f5">{data.list[6].weather[0].description} </p>
                 <img src={`icons/${data.list[6].weather[0].icon}.png`} alt="weather-icon" />
               </div>
               <div className="forecast-temp ">
